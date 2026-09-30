@@ -57,7 +57,7 @@ body {
   z-index: -1;
   background:
     radial-gradient(ellipse at 50% 45%, rgba(23, 58, 102, 0) 0%, rgba(23, 58, 102, 0.18) 70%, rgba(14, 38, 66, 0.42) 100%),
-    url("../assets/img/beach.jpg") 68% 55% / cover no-repeat;
+    url("../assets/img/sunset.jpg") 50% 50% / cover no-repeat;
   animation: bg-in 1.4s ease-out both;
 }
 
@@ -71,8 +71,9 @@ body {
 .stage {
   flex: 1;
   display: grid;
-  place-items: center;
-  padding: max(1.25rem, env(safe-area-inset-top)) 1.25rem 1rem;
+  justify-items: center;
+  align-items: start;
+  padding: max(clamp(2.5rem, 12vh, 8rem), env(safe-area-inset-top)) 1.25rem 1rem;
 }
 
 /* ---------- Frosted card ---------- */
