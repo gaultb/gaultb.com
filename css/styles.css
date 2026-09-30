@@ -71,9 +71,8 @@ body {
 .stage {
   flex: 1;
   display: grid;
-  justify-items: center;
-  align-items: start;
-  padding: max(clamp(2.5rem, 12vh, 8rem), env(safe-area-inset-top)) 1.25rem 1rem;
+  place-items: center;
+  padding: max(1.25rem, env(safe-area-inset-top)) 1.25rem 1rem;
 }
 
 /* ---------- Frosted card ---------- */
