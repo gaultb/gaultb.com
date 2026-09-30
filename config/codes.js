@@ -24,10 +24,10 @@ window.GAULTB_CONFIG = /*BEGIN-CONFIG*/{
   "entries": [
     {
       "hash": "f2954cac770ad657c9cc61f9e9bd81be09c5f2c8acf90e9311eae1b84b2f9865",
-      "kdfSalt": "0+jW4Cx2PeHSdmeAZCsG3A==",
-      "iv": "ZhYqaATQyPuvE8S9",
-      "ct": "pQM+3086PUe1LTi/VCbUYcOQg+uPvfxeRxAOZb2pbNmjmCZzmZH60bHSnaTqeQ==",
-      "note": "Admin sign-in"
+      "kdfSalt": "weOm04VqwWOBgH01AlnTKw==",
+      "iv": "2t/Rprmejz9KaKPH",
+      "ct": "S91gJSdMoKWimoupkcIh3VE8pgMgospCjfmW7g1FnJGzmD1hGLexcIG8DBHQdrRidZ8o1jgdskVY",
+      "note": "William admin sign-in (Librecloud)"
     }
   ]
 }/*END-CONFIG*/;
