@@ -28,6 +28,13 @@ window.GAULTB_CONFIG = /*BEGIN-CONFIG*/{
       "iv": "2t/Rprmejz9KaKPH",
       "ct": "S91gJSdMoKWimoupkcIh3VE8pgMgospCjfmW7g1FnJGzmD1hGLexcIG8DBHQdrRidZ8o1jgdskVY",
       "note": "William admin sign-in (Librecloud)"
+    },
+    {
+      "hash": "7174915f4d268ee4164a49ca945b2ecdc1c568f73cc0ccecd78f1608bdf0edd8",
+      "kdfSalt": "djBiWQfNNhHGylMbtLklwg==",
+      "iv": "6kNXCDlCttPWfLGR",
+      "ct": "4jR0JQb+5GR59WPvfR+o9jfACdXyz53A3p7fqP+s8BVTmisJ5C9RrPT3qsBju0bnMgTiYHw08Nfb8A==",
+      "note": "Vera Cohen view-only share"
     }
   ]
 }/*END-CONFIG*/;
