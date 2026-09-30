@@ -35,6 +35,13 @@ window.GAULTB_CONFIG = /*BEGIN-CONFIG*/{
       "iv": "6kNXCDlCttPWfLGR",
       "ct": "4jR0JQb+5GR59WPvfR+o9jfACdXyz53A3p7fqP+s8BVTmisJ5C9RrPT3qsBju0bnMgTiYHw08Nfb8A==",
       "note": "Vera Cohen view-only share"
+    },
+    {
+      "hash": "20688ae450602b716ab91b4d7131076f2b6c941913df74a043ffb7636af963b6",
+      "kdfSalt": "KTV/Fb0xDYHAw26PBKWTQQ==",
+      "iv": "RF29LBZg7ZfJAEQq",
+      "ct": "G+v3NlFUK6utaRffKkmDKfzeKYJBcdJUo2L9E/LgzCUfkhUkU0lLyJ8JznUqcFK5I8GF8yyqgjy/IA==",
+      "note": "Tom view/download/upload share"
     }
   ]
 }/*END-CONFIG*/;
