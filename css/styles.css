@@ -82,7 +82,7 @@ body {
   padding: clamp(1.9rem, 6vw, 2.6rem) clamp(1.4rem, 6vw, 2.5rem) clamp(1.4rem, 4vw, 1.8rem);
   text-align: center;
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.10);
   border: 1px solid rgba(255, 255, 255, 0.55);
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.6) inset,
