@@ -1,6 +1,6 @@
 /* gaultb.com — access-code gate
  *
- * Flow: 8 digits -> go to https://files.gaultb.com/s/<code>.
+ * Flow: 6 digits -> go to https://files.gaultb.com/s/<code>.
  * The code IS the Librecloud share link, so it is checked by Librecloud on the server.
  * No codes, hashes, or share links live in this page or this repo.
  * An unknown code makes Librecloud send the visitor back here as /#not-found.
@@ -8,12 +8,14 @@
 (function () {
   "use strict";
 
-  var LENGTH = 8;
+  var LENGTH = 6;
   var GATE = "https://files.gaultb.com/s/";
   var MAX_FAILS = 5;              // wrong tries before a cool-down
   var BASE_LOCK_MS = 30 * 1000;   // first cool-down; doubles each time, capped
   var MAX_LOCK_MS = 10 * 60 * 1000;
   var MIN_CHECK_MS = 450;         // keeps the "checking" feel consistent
+  var MIN_GAP_MS = 1000;          // at most one guess per second (browser only;
+                                  // Librecloud also throttles bad guesses per IP)
   var STORE_KEY = "gaultb.access.rl";
 
   var form = document.getElementById("code-form");
@@ -118,7 +120,11 @@
     if (busy) return;
     if (lockedFor() > 0) { startLockCountdown(); return; }
     var digits = code();
-    if (!/^\d{8}$/.test(digits)) return;
+    if (!/^\d{6}$/.test(digits)) return;
+    rl = loadRL(); // shared across tabs
+    var wait = (rl.last || 0) + MIN_GAP_MS - Date.now();
+    if (wait > 0) { setTimeout(check, wait); return; }
+    rl.last = Date.now(); saveRL(rl);
 
     busy = true;
     wrap.classList.remove("error", "shake");
